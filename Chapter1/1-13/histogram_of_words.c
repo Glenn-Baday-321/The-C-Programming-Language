@@ -8,7 +8,8 @@ int main() {
               x
         we set array length to 10 or 10 words since we hvent learned about dynamic arrays yet
     */
-   int c, char_count;
+   long c;
+   int char_count;
    int arr[10], i;
    char_count = i = 0;
     while ((c = getchar()) != EOF) {
@@ -20,7 +21,7 @@ int main() {
         // then we increment i since we want to store the length of the next word in different index
         if (c == ' ' || c == '\t' || c == '\n') {
             arr[i] = char_count;
-            if (char_count == 0) {
+            if (char_count == 0 ) {
                 arr[i] = 0;
             }
             char_count = 0; 
@@ -35,6 +36,6 @@ int main() {
         }
         printf("\n");
     }
-    
+
     return 0;
 }
